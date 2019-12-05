@@ -10,9 +10,9 @@
     <div id="app">
         <section>
             <header>
-                <h1>{{title}}</h1>
+                <h1 style="padding: 10px; background-color: bisque;">{{title}}</h1>
             </header>
-            <div>
+            <div style="background-color: aquamarine; width: 400px; height: 100%; padding: 5px;">
                 <input type="text" :value="stateName" @input="setNewState"/>  
                 <button @click="addState">Adicionar estado</button>
                 <div v-for="item in states">
